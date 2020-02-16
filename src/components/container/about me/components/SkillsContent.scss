@@ -1,0 +1,25 @@
+@import "../../../default";
+
+.skills-content-info {
+  width: 100%;
+  @include flexBox(row, space-between, none);
+  margin-bottom: 1em;
+  &-progress{
+    font-family: Nunito-Bold;
+  }
+}
+.skills-content-bar {
+  width: 100%;
+  background-color: #eee;
+  margin-bottom: 1.5em;
+  &:last-child{
+        margin-bottom: 0;
+  }
+  &-value{
+    text-align: right;
+    padding: 4px 0;
+    color: #fff;
+    background-color: $border-line;
+  }
+
+}

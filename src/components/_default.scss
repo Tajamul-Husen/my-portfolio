@@ -1,0 +1,76 @@
+$primary-color: #007ee5;
+$lightprimary-color: lighten($primary-color, 18%);
+$secondary-color: #071e3d;
+$tertiary-color: #fff;
+$border-line: $primary-color;
+$transition: all 0.3s ease-in-out;
+$para-1: #e2f3f5;
+$para-2: #222;
+$card-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
+$desktop-size: 1000px;
+$tablet-size: 768px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 0.9em;
+  background-color: $primary-color;
+  border: none;
+  color: #fff;
+  font-family: Nunito-Bold;
+  font-size: 1.05rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $lightprimary-color;
+    transition: $transition;
+  }
+}
+.header-content {
+  width: 100%;
+}
+.header-content-title {
+  padding: 0.3em 0.6em;
+  font-size: 1.7rem;
+  border-left: 7px solid $border-line;
+  background-color: $tertiary-color;
+  margin-bottom: 2em;
+  color: #222;
+  font-family: Nunito-Bolder;
+}
+.para {
+  font-size: 17px;
+  line-height: 1.9rem;
+  color: $para-1;
+}
+.para-block {
+  color: $para-2;
+}
+.block {
+  background-color: $tertiary-color;
+}
+.highlight-content {
+  color: $primary-color;
+  font-weight: 600;
+  &:hover {
+    color: $lightprimary-color;
+  }
+}
+
+@mixin flexBox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@media screen and(min-width:$desktop-size) {
+  .para {
+    font-size: 18.5px;
+  }
+}
