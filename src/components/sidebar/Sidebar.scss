@@ -72,6 +72,7 @@
       overflow: hidden;
       transition: $transition;
       text-align: center;
+      z-index: 10;
       @include flexBox(column, flex-start, center);
       padding-top: 8em;
       .close-btn {
@@ -117,22 +118,9 @@
   }
 }
 .bar {
-  transform: translateY(-100%);
-  transition: $transition;
   background-color: #103151;
-  animation: barSliding 0.3s forwards ease-in-out;
 }
-@keyframes barSliding {
-  0% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+
 
 @media screen and(min-width:$desktop-size) {
   .sidebar {

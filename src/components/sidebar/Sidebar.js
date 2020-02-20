@@ -8,18 +8,32 @@ function Sidebar() {
   const [toggleNavbar, setToggleNavbar] = useState(false);
   const [topBar, setTopBar] = useState(false);
 
-  const handleSidebar = () => {
+  const handleSidebar = e => {
     if (window.innerWidth > 1000) {
       setToggleNavbar(false);
       return;
     }
-    setToggleNavbar(!toggleNavbar);
+    if (e.target.classList.contains("wrapper")) {
+      setToggleNavbar(false);
+    }
+    if (e.target.classList.contains("navbar-item-link")) {
+      setToggleNavbar(false);
+    }
+    if (
+      e.target.classList.contains("hamburger-menu") ||
+      e.target.classList.contains("hamburger-menu-line") ||
+      e.target.classList.contains("close-btn")
+    ) {
+      setToggleNavbar(!toggleNavbar);
+    }
   };
 
   window.onscroll = () => {
-    if (document.documentElement.scrollTop > 30 && toggleNavbar === false) {
+    if (document.documentElement.scrollTop > 30) {
       setTopBar(true);
-    } else setTopBar(false);
+    } else {
+      setTopBar(false);
+    }
   };
 
   return (

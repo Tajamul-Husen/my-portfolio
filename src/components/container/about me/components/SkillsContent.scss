@@ -4,8 +4,9 @@
   width: 100%;
   @include flexBox(row, space-between, none);
   margin-bottom: 1em;
-  &-progress{
+  &-skill{
     font-family: Nunito-Bold;
+    color: #222 !important;
   }
 }
 .skills-content-bar {
