@@ -1,72 +1,71 @@
 @import "../../default";
 
-$bg:url("../../../assets/img/home/bg.jpg");
-$gradient:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.95));
-
 #home {
   width: 100%;
   height: 100vh;
   padding: 0 1.5em;
-  background: $gradient, $bg 50% 50% no-repeat;
-  background-size: cover;
+  background-color: #f5f6f7;
   position: relative;
-  box-shadow:inset 0 30px 50px 1px rgba(0, 0, 0, 0.5);
   @include flexBox(row, center, center);
   .hero {
     &-name {
       font-family: Nunito-Bolder;
-      font-size: 1.6rem;
-      color: #fff;
+      font-size: 1.7rem;
+      color: $primary-color;
+      margin-bottom: 0.3em;
     }
     &-position {
       font-family: Nunito-Bolder;
-      font-size: 2.7rem;
-      line-height: 2.8rem;
-      color: #fff;
-      &-highlight {
-        color: #fff;
-      }
+      font-size: 3rem;
+      line-height: 0.95em;
+      color: $primary-color;
+      margin-bottom: 0.9em;
+    }
+    &-intro {
+      width: 250px;
+      line-height: 1.4em;
+      margin-bottom: 3em;
     }
     &-btn {
       font-family: Nunito-Bolder;
       margin-right: 2em;
     }
-    & > * {
-      margin-bottom: 0.9em;
-    }
   }
 }
-@media screen and(min-width:$tablet-size){
-  #home{
+@media screen and(min-width:$tablet-size) {
+  #home {
     justify-content: flex-start;
-    background: $gradient, $bg 10% 5% no-repeat;
-    background-size: cover;
-    .hero{
-      &-name{
+    background-color: #f5f6f7;
+    .hero {
+      &-name {
         font-size: 2rem;
       }
-      &-position{
+      &-position {
         font-size: 3.5rem;
       }
     }
   }
 }
-@media screen and(min-width:950px){
-  #home{
-    .hero{
-      &-name{
-        font-size: 2.5rem;
+@media screen and(min-width:950px) {
+  #home {
+    .hero {
+      &-name {
+        font-size: 2.3rem;
       }
-      &-position{
-        font-size: 4rem;
+      &-position {
+        font-size: 3.7rem;
       }
     }
   }
-  
 }
 
-@media screen and(min-width:$desktop-size){
-  #home{
+@media screen and(min-width:$desktop-size) {
+  #home {
     padding: 0 2.5em;
+    .hero {
+      &-position {
+        line-height: 1em;
+      }
+    }
   }
 }

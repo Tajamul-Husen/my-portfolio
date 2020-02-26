@@ -6,7 +6,6 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 function Sidebar() {
   const [toggleNavbar, setToggleNavbar] = useState(false);
-  const [topBar, setTopBar] = useState(false);
 
   const handleSidebar = e => {
     if (window.innerWidth > 1000) {
@@ -28,16 +27,9 @@ function Sidebar() {
     }
   };
 
-  window.onscroll = () => {
-    if (document.documentElement.scrollTop > 30) {
-      setTopBar(true);
-    } else {
-      setTopBar(false);
-    }
-  };
 
   return (
-    <div className={topBar ? "sidebar bar" : "sidebar"}>
+    <div className="sidebar">
       <div className="brand">
         <Link to="/">
           <h2 className="brand-icon">T</h2>

@@ -1,5 +1,4 @@
 @import "../../../default";
-$education-color:#222;
 
 .education-content-info {
   width: 100%;
@@ -19,7 +18,7 @@ $education-color:#222;
     &-edu {
       font-family: Nunito-Bold;
       font-size: 1.16rem;
-      color: $education-color !important;
+      color: #222 !important;
     }
     &-college{
       line-height: 1.35rem !important;
@@ -33,7 +32,7 @@ $education-color:#222;
     &-year{
       font-family: Nunito-Bold;
       margin-bottom: 0;
-      color: $education-color !important;
+      color: #222 !important;
     }
   }
   &-aggregate {
@@ -41,6 +40,5 @@ $education-color:#222;
     right: 0;
     margin-top: -1.75em;
     font-family: Nunito-Bold;
-    color: $education-color !important;
   }
 }

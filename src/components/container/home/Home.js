@@ -8,9 +8,9 @@ function Home() {
       <div className="hero">
         <h3 className="hero-name">Hi, I'm Tajamul Husen</h3>
         <h1 className="hero-position">
-          I'm a
-          <span className="hero-position-highlight"> Front End Engineer</span>
+          I'm a Front End Engineer
         </h1>
+        <p className="hero-intro para">Who build things for the web. Specialize in web contents.</p>
         <Link to="/projects">
           <button className="btn hero-btn">Projects</button>
         </Link>
