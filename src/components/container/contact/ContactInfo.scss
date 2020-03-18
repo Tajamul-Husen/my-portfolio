@@ -5,7 +5,7 @@
   @include flexBox(row, flex-start, center);
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
-  border-bottom: 2px solid $border-line;
+  border-bottom: 2px solid $secondary-color;
   &:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -13,12 +13,12 @@
   }
   &-icon {
     font-size: 1.7rem;
-    color: $border-line;
+    color: $secondary-color;
     width: 25px;
     margin-right: 1em;
   }
   &-personal-contact{
     font-family: Nunito-Bold;
-    color: #222 !important;
+    color: $primary-color;
   }
 }

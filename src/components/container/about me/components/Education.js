@@ -19,7 +19,7 @@ function Education() {
   return (
     <div className="education">
       <h3 className="education-header">Education</h3>
-      <div className="education-content block">{data}</div>
+      <div className="education-content box-container">{data}</div>
     </div>
   );
 }

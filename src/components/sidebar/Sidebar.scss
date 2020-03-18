@@ -17,8 +17,8 @@
       cursor: pointer;
       transition: $transition;
       &:hover {
-        color: #6f6f6f;
-        border-color: #6f6f6f;
+        color:$secondary-color;
+        border-color: $secondary-color;
       }
     }
   }
@@ -29,11 +29,12 @@
     right: 1.5em;
     display: block;
     cursor: pointer;
+    z-index: 15;
     &-line {
       background-color: #fff;
       width: 33px;
-      height: 4px;
-      margin: 4px 0px;
+      height: 3px;
+      margin: 5px 0px;
       transition: $transition;
       &:first-child {
         width: 20px;
@@ -42,13 +43,27 @@
       }
     }
     &:hover .hamburger-menu-line {
-      background-color: #6f6f6f;
+      background-color: $secondary-color;
+    }
+  }
+  .hamburger-trans {
+    & .hamburger-menu-line:nth-child(1) {
+      width: 33px;
+      -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    & .hamburger-menu-line:nth-child(2) {
+      opacity: 0;
+    }
+    & .hamburger-menu-line:nth-child(3) {
+      -webkit-transform: rotate(45deg) translate(-5px, -6px);
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
   .social-links {
     display: none;
     &-url {
-      color: #6f6f6f;
+      color: $tertiary-color;
     }
   }
   .wrapper {
@@ -62,7 +77,7 @@
     visibility: hidden;
     .navbar {
       width: 50%;
-      background-color: #fff;
+      background-color: $primary-color;
       position: absolute;
       top: 0;
       right: 0;
@@ -82,9 +97,9 @@
         right: 25px;
         cursor: pointer;
         transition: $transition;
-        color: #6f6f6f;
+        color: $tertiary-color;
         &:hover {
-          color: $primary-color;
+          color: $secondary-color;
         }
         & .navbar {
           transform: translateX(100%);
@@ -98,16 +113,16 @@
         &-link {
           text-decoration: none;
           font-size: 1.1rem;
-          color: $para-1;
+          color: $tertiary-color;
           transition: $transition;
           font-family: Nunito-Bold;
           &:hover {
-            color: $primary-color;
+            color: $secondary-color;
           }
         }
       }
       .active {
-        color: $primary-color;
+        color: $secondary-color;
       }
     }
   }
@@ -126,17 +141,14 @@
   .sidebar {
     width: 25%;
     height: 100%;
-    background-color: #fff;
-    box-shadow: $card-shadow;
     padding: 2em;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.3);
     @include flexBox(column, space-around, center);
     .brand {
       padding-top: 0;
       &-icon {
         padding: 0 10px;
         font-size: 3rem;
-        color:$primary-color;
-        border-color: $primary-color;
       }
     }
     .hamburger-menu {
@@ -145,7 +157,6 @@
     .wrapper {
       position: relative !important;
       height: initial;
-      background-color: #fff;
       visibility: visible;
       .navbar {
         position: relative !important;
@@ -159,12 +170,8 @@
         }
         &-item {
           width: 100%;
-          border-bottom: 2px solid #eee;
           padding: 0.7em;
           margin-bottom: 0.5em !important;
-          &:last-child {
-            border-bottom: none;
-          }
         }
       }
     }
@@ -178,7 +185,7 @@
         cursor: pointer;
         transition: $transition;
         &:hover {
-          color: $primary-color;
+          color: $secondary-color;
         }
       }
     }

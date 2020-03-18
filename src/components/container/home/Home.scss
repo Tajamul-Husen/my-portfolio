@@ -4,21 +4,21 @@
   width: 100%;
   height: 100vh;
   padding: 0 1.5em;
-  background-color: #f5f6f7;
+  background-color: $primary-color;
   position: relative;
   @include flexBox(row, center, center);
   .hero {
     &-name {
       font-family: Nunito-Bolder;
       font-size: 1.7rem;
-      color: $primary-color;
-      margin-bottom: 0.3em;
+      color: $para-2;
+      margin-bottom: 0.5em;
     }
     &-position {
       font-family: Nunito-Bolder;
       font-size: 3rem;
       line-height: 0.95em;
-      color: $primary-color;
+      color: $para-2;
       margin-bottom: 0.9em;
     }
     &-intro {
@@ -35,7 +35,7 @@
 @media screen and(min-width:$tablet-size) {
   #home {
     justify-content: flex-start;
-    background-color: #f5f6f7;
+    background-color: $primary-color;
     .hero {
       &-name {
         font-size: 2rem;

@@ -35,7 +35,8 @@ function Sidebar() {
           <h2 className="brand-icon">T</h2>
         </Link>
       </div>
-      <div className="hamburger-menu" onClick={handleSidebar}>
+      <div className={toggleNavbar ? "hamburger-menu hamburger-trans":"hamburger-menu"} 
+      onClick={handleSidebar}>
         <div className="hamburger-menu-line"></div>
         <div className="hamburger-menu-line"></div>
         <div className="hamburger-menu-line"></div>
@@ -46,9 +47,9 @@ function Sidebar() {
         onClick={handleSidebar}
       >
         <ul className={toggleNavbar ? "navbar navbar-open" : "navbar"}>
-          <div className="close-btn" onClick={handleSidebar}>
+          {/* <div className="close-btn" onClick={handleSidebar}>
             &times;
-          </div>
+          </div> */}
           <li className="navbar-item">
             <NavLink
               exact

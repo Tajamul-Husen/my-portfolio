@@ -8,7 +8,7 @@ function About() {
     <div id="about">
       <div className="header-content">
         <h2 className="header-content-title">About Me</h2>
-        <p className="para">
+        <p className="para-3">
           Hi! My name is <span className="highlight-content">Tajamul Husen</span>. I'm a <span className="highlight-content">Front End Engineer</span> based in Mumbai.
           I'm graduate from Bsc. Information Technology. Well trained Web
           Developer that knows how to create design and modify web content. who

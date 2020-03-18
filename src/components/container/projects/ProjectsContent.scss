@@ -3,7 +3,6 @@
 .projects-content-showcase {
   position: relative;
   background-color: #fff;
-  box-shadow: $card-shadow;
   overflow: hidden;
   &-img {
     width: 100%;
@@ -25,7 +24,7 @@
     }
   }
   &:hover &-btns {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     border: none;
   }
   &:hover &-btns-preview,

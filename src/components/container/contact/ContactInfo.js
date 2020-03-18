@@ -8,7 +8,7 @@ function ContactInfo(props) {
       <p className="contact-info-content-icon">
         <FontAwesomeIcon icon={props.icons} />
       </p>
-      <p className="para para-block contact-info-content-personal-contact">
+      <p className="para-1 contact-info-content-personal-contact">
         {props.contacts}
       </p>
     </div>
