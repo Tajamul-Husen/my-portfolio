@@ -8,10 +8,12 @@ $transition: all 0.3s ease-in-out;
 $desktop-size: 1000px;
 $tablet-size: 768px;
 
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: hue($color: #23252c);
 }
 a {
   text-decoration: none;

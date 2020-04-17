@@ -6,7 +6,7 @@
   @include flexBox(column, space-between, flex-start);
   padding: 1em 1.5em;
   z-index: 5;
-  background-color: $primary-color;
+  background-color: darken($primary-color,2%);
   .brand {
     &-icon {
       font-family: Nunito-Bolder;
@@ -77,7 +77,7 @@
     visibility: hidden;
     .navbar {
       width: 50%;
-      background-color: $primary-color;
+      background-color: darken($primary-color,2%);
       position: absolute;
       top: 0;
       right: 0;
@@ -142,7 +142,6 @@
     width: 25%;
     height: 100%;
     padding: 2em;
-    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.3);
     @include flexBox(column, space-around, center);
     .brand {
       padding-top: 0;

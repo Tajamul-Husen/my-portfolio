@@ -1,4 +1,4 @@
-@import '../default';
+@import "../default";
 
 .container {
   width: 100%;
@@ -6,8 +6,9 @@
   background-color: $primary-color;
 }
 
-@media screen and(min-width:$desktop-size){
-  .container{
+
+@media screen and(min-width:$desktop-size) {
+  .container {
     width: 75%;
     margin-left: auto;
   }
