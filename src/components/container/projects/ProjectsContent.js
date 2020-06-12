@@ -11,22 +11,26 @@ function ProjectsContent(props) {
         alt={props.altName}
       />
       <div className="projects-content-showcase-btns">
-        <a
-          href={props.preview}
-          className="btn projects-content-showcase-btns-preview"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          preview
-        </a>
-        <a
-          href={props.github}
-          className="btn projects-content-showcase-btns-code"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github
-        </a>
+        {props.preview && (
+          <a
+            href={props.preview}
+            className="btn projects-content-showcase-btns-preview"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            preview
+          </a>
+        )}
+        {props.github && (
+          <a
+            href={props.github}
+            className="btn projects-content-showcase-btns-code"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+        )}
       </div>
     </div>
   );
