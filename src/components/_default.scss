@@ -38,7 +38,7 @@ a {
 }
 .header-content-title {
   padding: 0.5em 0.7em;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-left: 7px solid $secondary-color;
   background-color: lighten($primary-color, 5%);
   margin-bottom: 2em;
@@ -46,7 +46,7 @@ a {
   font-family: Nunito-Bolder;
 }
 .para {
-  font-size: 17px;
+  font-size: 16.5px;
   line-height: 1.9rem;
   letter-spacing: 0.05rem;
 }
@@ -78,8 +78,4 @@ a {
   align-items: $align;
 }
 
-@media screen and(min-width:$desktop-size) {
-  .para {
-    font-size: 17px;
-  }
-}
+

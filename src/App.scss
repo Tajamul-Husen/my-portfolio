@@ -13,14 +13,19 @@
 
 body {
   font-family: Nunito, sans-serif;
-  overflow-y: auto;
 }
 
-body::-webkit-scrollbar {
+.app {
+  overflow-y: auto;
+  scrollbar-color: lighten(#23252c, 15%) #23252c;
+  scrollbar-width: thin;
+}
+
+.app::-webkit-scrollbar {
   background-color: #23252c;
   width: 6px;
 }
-body::-webkit-scrollbar-thumb {
-  background-color: lighten(#23252c,15%);
+.app::-webkit-scrollbar-thumb {
+  background-color: lighten(#23252c, 15%);
   border-radius: 2px;
 }
